@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Awareness - Understanding the Impact</title>
+    <link rel="stylesheet" href="learn-more.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EcoTech<span>Recycling</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#problem">The Problem</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Understanding E-Waste</h1>
+            <p class="typing-text">Our digital footprint matters.</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <section id="problem" class="problem-section">
+        <h2>The Growing E-Waste Crisis</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-trash-alt"></i>
+                <h3>57.4M Tons</h3>
+                <p>Annual global e-waste generation</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-recycle"></i>
+                <h3>17.4%</h3>
+                <p>Global recycling rate</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>$57B</h3>
+                <p>Value of raw materials in e-waste</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="impact-section">
+        <h2>Environmental Impact</h2>
+        <div class="impact-grid">
+            <div class="impact-card">
+                <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=500" alt="Toxic materials">
+                <h3>Toxic Materials</h3>
+                <p>E-waste contains harmful substances like lead, mercury, and flame retardants that can contaminate soil and water.</p>
+            </div>
+            <div class="impact-card">
+                <img src="https://images.unsplash.com/photo-1611270418597-a6c77f4b7271?w=500" alt="Carbon footprint">
+                <h3>Carbon Footprint</h3>
+                <p>Improper disposal contributes to greenhouse gas emissions and climate change.</p>
+            </div>
+            <div class="impact-card">
+                <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=500" alt="Resource depletion">
+                <h3>Resource Depletion</h3>
+                <p>Valuable materials are lost when electronics aren't recycled properly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-section">
+        <h2>What's Inside Your Device?</h2>
+        <div class="device-explorer">
+            <div class="device-image">
+                <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500" alt="Smartphone components">
+                <div class="hotspot" style="top: 30%; left: 20%;" data-material="Gold">
+                    <span class="hotspot-dot"></span>
+                    <div class="hotspot-content">
+                        <h4>Gold</h4>
+                        <p>Used in circuit boards and connectors</p>
+                    </div>
+                </div>
+                <div class="hotspot" style="top: 50%; left: 60%;" data-material="Lithium">
+                    <span class="hotspot-dot"></span>
+                    <div class="hotspot-content">
+                        <h4>Lithium</h4>
+                        <p>Found in batteries</p>
+                    </div>
+                </div>
+                <div class="hotspot" style="top: 70%; left: 40%;" data-material="Copper">
+                    <span class="hotspot-dot"></span>
+                    <div class="hotspot-content">
+                        <h4>Copper</h4>
+                        <p>Used in wiring and circuits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="solutions-section">
+        <h2>Our Solutions</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Collection</h3>
+                    <p>We organize regular e-waste collection drives and provide convenient drop-off points.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Sorting</h3>
+                    <p>Advanced sorting technology separates different types of materials.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Processing</h3>
+                    <p>Safe extraction of valuable materials while properly disposing of hazardous components.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Recycling</h3>
+                    <p>Materials are recycled into new products, reducing the need for raw material extraction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="action-section">
+        <h2>Take Action Now</h2>
+        <div class="action-grid">
+            <div class="action-card">
+                <i class="fas fa-box"></i>
+                <h3>Collect</h3>
+                <p>Gather your old electronics</p>
+            </div>
+            <div class="action-card">
+                <i class="fas fa-location-dot"></i>
+                <h3>Locate</h3>
+                <p>Find a collection point</p>
+            </div>
+            <div class="action-card">
+                <i class="fas fa-truck"></i>
+                <h3>Drop Off</h3>
+                <p>Bring your e-waste to us</p>
+            </div>
+            <div class="action-card">
+                <i class="fas fa-heart"></i>
+                <h3>Make Impact</h3>
+                <p>Help save the environment</p>
+            </div>
+        </div>
+        <a href="index.html#contact" class="cta-button">Contact Us</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@ecotechrecycling.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="learn-more.js"></script>
+</body>
+</html> 
