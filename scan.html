@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTech Recycling - AI E-Waste Scanner</title>
+    <link rel="stylesheet" href="scan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>EcoTech<span>Recycling</span></h1>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learn-more.html">Learn More</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="scan-container">
+        <section class="upload-section">
+            <h1>AI E-Waste Scanner</h1>
+            <p class="subtitle">Upload a photo of your electronic waste for instant analysis</p>
+            
+            <div class="upload-box" id="uploadBox">
+                <div class="upload-content">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag and drop your image here or</p>
+                    <label for="fileInput" class="upload-btn">Choose File</label>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+                <div class="preview-container" id="previewContainer" style="display: none;">
+                    <img id="imagePreview" src="" alt="Preview">
+                    <button class="scan-btn" id="scanButton">Analyze Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section" id="resultsSection" style="display: none;">
+            <div class="results-grid">
+                <!-- Item Identification Card -->
+                <div class="result-card identification">
+                    <div class="card-header">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Identified Item</h3>
+                    </div>
+                    <div class="card-content">
+                        <h4>Old Smartphone</h4>
+                        <p class="category">Category: Mobile Devices</p>
+                        <div class="recyclability-score">
+                            <span>Recyclability Score</span>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 85%;"></div>
+                            </div>
+                            <span class="score-value">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recycling Tips Card -->
+                <div class="result-card recycling-tips">
+                    <div class="card-header">
+                        <i class="fas fa-recycle"></i>
+                        <h3>Recycling Tips</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Remove battery before recycling</li>
+                            <li>Backup and wipe personal data</li>
+                            <li>Check for trade-in options</li>
+                            <li>Contains harmful components: Battery, Screen</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fun Facts Card -->
+                <div class="result-card fun-facts">
+                    <div class="card-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Did You Know?</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="fact-bubble">
+                            <p>Improper disposal of 1 smartphone can pollute 132,000 liters of water!</p>
+                        </div>
+                        <div class="fact-bubble">
+                            <p>Your phone contains enough gold to make a ring!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Share Card -->
+                <div class="result-card social-share">
+                    <div class="card-header">
+                        <i class="fas fa-share-alt"></i>
+                        <h3>Share & Inspire</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="caption">"🌱 Taking steps towards a greener future! Just learned my old phone can be 85% recycled. Every small action counts! #EcoWarrior #SaveThePlanet"</p>
+                        <div class="share-buttons">
+                            <button class="share-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button class="share-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="share-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button class="share-btn linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="impact-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Help reduce toxic e-waste! Schedule a pickup today.</p>
+                </div>
+                <button class="schedule-btn">Schedule Pickup</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@ecotechrecycling.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scan.js"></script>
+</body>
+</html> 
